@@ -1,0 +1,134 @@
+.navbar-custom {
+  background-color: var(--main-dark-color);
+  height: 4.2rem;
+  border-bottom: 2px solid #aedaa1;
+}
+
+.nav-link .nav-item.dropdown{
+  padding: 2px;
+  display: inline;
+  text-align: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+  color: white;
+  font-weight: 500 !important;
+  font-size: 12px;
+  border-left: 2px solid #dae4e0;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+  position: absolute;
+  left: auto;
+}
+
+.nav-link :hover,
+.nav-link.active {
+  background-color: #bce9cc;
+}
+
+.custom-logo-link {
+  height: 60px;
+  width: 60px;
+}
+
+#count {
+  display: block;
+  height: 20px;
+  width: 20px;
+  font-size: 0.75rem;
+  line-height: 20px;
+  text-align: center;
+  background-color: var(--second-color);
+  border-radius: 50%;
+  position: relative;
+  top: -1rem;
+  left: 1.6rem;
+}
+
+.cart-icon{
+  color: white;
+  position: relative;
+  left: 2rem;
+  height: 1.5em;
+}
+
+#cart-button {
+  display: contents;
+  text-decoration: none;
+  color: var(--bs-nav-link-color);
+}
+
+@media screen and (max-width: 990px) {
+  /*phone screen*/
+  .nav-link {
+    padding: 5px 20px;
+    border-left: none;
+    border-bottom: 2px solid #dae4e0;
+    text-align: right;
+    background-color: var(--main-dark-color);
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link{
+    font-size: 16px;
+  }
+
+  .navbar-expand-lg .navbar-nav .dropdown-menu{
+    position: inherit;
+  }
+
+  .d-flex{
+    padding: 1px;
+  }
+
+  button.navbar-toggler.collapsed {
+    margin-left: -25px;
+  }
+
+  .navbar-toggler{
+    margin-left: 22px;
+  }
+
+  .navbar-custom{
+    height: 4.5rem;
+    padding-top: 0rem;
+  }
+
+  .cart-icon{
+    position: relative;
+    left: 7rem;
+  }
+
+  #count{
+    top: -1rem;
+    left: 6.6rem;
+  }
+}
+
+
+/* Style for the dropdown items */
+.dropdown-item {
+  color: #212529; 
+  text-align: right;
+  /* padding: 0px 10px; */
+  border-bottom: 1px solid #94bdac;
+}
+
+.dropdown-item:hover {
+  background-color: var(--second-color); 
+}
+
+a#basic-nav-dropdown.dropdown-toggle.show.nav-link{
+  color: #212529;
+}
+
+div.dropdown-menu.show{
+  width: 100%;
+}
+
+.dropdown-toggle:focus {
+  background-color: #bce9cc;
+  color: #212529 !important;
+  box-shadow: none; 
+  outline: none; 
+}

@@ -1,0 +1,72 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+####### react - frontEnd###############################
+# dependencies
+react-app/node_modules
+/.pnp
+react-app/.pnp.js
+
+# testing
+react-app/coverage
+
+# production
+react-app/build
+
+# misc
+react-app/.DS_Store
+react-app/.env.local
+react-app/.env.development.local
+react-app/.env.development
+react-app/.env.test.local
+react-app/.env.production.local
+backend/.env.production
+backend/.env.development
+backend/.env
+
+react-app/npm-debug.log*
+react-app/yarn-debug.log*
+react-app/yarn-error.log*
+
+# others
+react-app/package-lock.json
+
+################# NodeJs Backend ######################
+
+# Logs
+Backend/logs
+Backend/*.log
+
+# Runtime data
+Backend/pids
+Backend/*.pid
+Backend/*.seed
+Backend/*.pid.lock
+
+# Dependency directories
+Backend/node_modules/
+Backend/jspm_packages/
+
+# Distribution files
+Backend/dist/
+Backend/bower_components/
+Backend/build/
+Backend/out/
+Backend/vendor/
+Backend/npm-debug.log*
+
+# IDE files
+Backend/.vscode/
+Backend/.idea/
+Backend/*.iml
+
+# OS files
+Backend/.DS_Store
+Backend/Thumbs.db
+Backend/ehthumbs.db
+Backend/Desktop.ini
+
+# Compiled binary addons (if any)
+Backend/build/Release
+
+##### 
+Backend/package-lock.json

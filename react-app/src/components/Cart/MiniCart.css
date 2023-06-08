@@ -1,0 +1,158 @@
+:root {
+  --maincolor: var(--third-color);
+  --seccolor: var(--main-dark-color);
+  --thirdcolor: var(--second-color);
+}
+
+.cart-box {
+  display: none;
+  position: absolute;
+  left: 1rem;
+  width: 20rem;
+  background-color: var(--maincolor);
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 999;
+}
+
+.mini-card {
+  border: 1px solid rgba(163, 163, 163, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  transition: 0.3s;
+  padding: 5px;
+  margin-bottom: 1rem;
+}
+
+.cart-box.open {
+  display: block;
+  position: fixed;
+  width: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--thirdcolor);
+  color: var(--seccolor);
+  border: none;
+  cursor: pointer;
+}
+
+.cart-item {
+  margin-bottom: 10px;
+}
+
+#box-title {
+  text-align: center;
+  color: var(--seccolor);
+}
+
+img {
+  width: 100%;
+}
+
+.peoples-text {
+  color: gray;
+  opacity: 80%;
+  font-size: small;
+}
+
+.icon {
+  color: var(--main-dark-color);
+  cursor: pointer;
+}
+.icon:hover {
+  color: var(--main-light-color);
+  background-color: var(--main-dark-color);
+  border-radius: 100%;
+}
+
+.date {
+  text-align: center;
+  font-size: smaller;
+}
+
+.total-price {
+  font-weight: 500;
+}
+
+/*###########buttons#########*/
+div.row a {
+  margin-bottom: 0.5rem;
+}
+
+.button-hover-white {
+  margin: 0.25rem 0 !important;
+}
+
+.button-hover-white:hover {
+  background-color: var(--maincolor);
+  color: var(--seccolor);
+  border-color: var(--seccolor);
+}
+
+.button-hover-white:disabled,
+.button-hover-white:disabled,
+.secondary-button:hover:disabled {
+  background-color: gray !important;
+  cursor: not-allowed !important;
+  color: inherit !important;
+  border-color: inherit !important;
+}
+/*###########################*/
+@media screen and (max-width: 768px) {
+  .cart-box {
+    display: none;
+  }
+  .cart-box.open {
+    display: none;
+  }
+
+  .mini-cart-mobile-wrapper {
+    background-color: rgb(155, 201, 172) /*changecolor from root*/;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    padding-bottom: 10px;
+    border-top: 5px solid var(--second-color);
+    padding-top: 1rem;
+  }
+
+  .mini-cart-mobile-wrapper.close {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mini-cart-mobile-wrapper {
+    display: none !important;
+  }
+}
+
+.scroll-list-cart {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.scroll-list-cart.mobile {
+  max-height: 150px;
+  overflow-x: hidden;
+}
+
+/* customize scrollbar */
+.scroll-list-cart::-webkit-scrollbar {
+  width: 15px;
+}
+
+.scroll-list-cart::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.scroll-list-cart::-webkit-scrollbar-thumb {
+  background: rgb(150, 182, 160);
+  border-radius: 10px;
+}

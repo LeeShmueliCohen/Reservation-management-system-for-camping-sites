@@ -1,0 +1,52 @@
+.floating-button-container {
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 0;
+}
+
+.floating-button {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #00c0f3;
+  color: #231f20;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  width: 94px;
+  height: 85px;
+  cursor: pointer;
+  line-height: 16px;
+  margin: 0;
+}
+
+.floating-button svg {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.offcanvas.offcanvas-start {
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+  text-align: right;
+}
+.offcanvas-header {
+  text-align: center;
+  flex-direction: row-reverse;
+  background-color: #00c0f3;
+  color: white;
+}
+.btn-close {
+  font-weight: 600;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .floating-button {
+    font-size: 16px;
+    width: 75px;
+    height: 68px;
+  }
+
+  .floating-button svg {
+    font-size: 1.2rem;
+  }
+}

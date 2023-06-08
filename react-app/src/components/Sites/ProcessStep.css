@@ -1,0 +1,45 @@
+.progress-indicator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 1% auto;    
+}
+
+.test{
+    width: 50%;
+    display: flex;
+    font-weight: 500;
+    font-size: 80%;
+    background-color: #555;
+}
+
+.step {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.step.step-active{
+    background-color: #ccc;
+    color: #000;
+}
+
+.step-num {
+    width: 30px;
+    height: 30px;
+    margin-left: 3%;
+    margin-right: 2%;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+  
+.step-num.num-active {
+    background: linear-gradient( var(--second-color) , rgb(51, 95, 72));
+    color: #000;
+}

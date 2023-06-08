@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+:root {
+  --main-dark-color: #004b3f;
+  --second-color: rgb(179, 221, 79);
+  --main-light-color: #ddede3;
+  --third-color: white;
+  --text-size: 100%;
+  --text-color: inherit;
+  --background-color: rgb(240, 240, 240);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+
+html {
+  margin: 0px;
+}
+
+body {
+  margin: 0;
+  font-size: var(--text-size) !important;
+  color: var(--text-color, var(--theme-text-color)) !important;
+  background-color: var(
+    --background-color,
+    var(--theme-background-color)
+  ) !important;
+}
+
+.cart-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  min-height: 38rem !important;
+}
+
+.card-item {
+  border: 1px solid rgba(163, 163, 163, 0.5);
+  border-radius: 10px;
+  overflow: visible;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  transition: 0.3s;
+  padding: 5px;
+  margin-bottom: 1rem;
+  background-color: var(--maincolor);
+}
+
+.card-item-sum {
+  background-color: var(--seccolor);
+  color: var(--maincolor);
+}
+
+/* customize scrollbar */
+::-webkit-scrollbar {
+  width: 15px; /* adjust to your liking */
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(150, 182, 160);
+  border-radius: 10px;
+}
+
+/*################# buttons ########################*/
+.primary-button,
+.secondary-button,
+.third-button,
+.fourth-button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--second-color);
+  color: var(--main-dark-color);
+  border-radius: 4px;
+  border: solid 1px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin: 0 0.25rem;
+}
+
+.secondary-button,
+.primary-button:hover {
+  background-color: var(--main-dark-color);
+  color: var(--second-color);
+  border-color: var(--second-color);
+}
+
+.secondary-button:hover {
+  background-color: var(--second-color);
+  color: var(--main-dark-color);
+  border-color: var(--main-dark-color);
+}
+
+.third-button {
+  background-color: inherit;
+  color: var(--main-dark-color);
+  border-color: var(--main-dark-color);
+}
+
+.fourth-button {
+  background-color: var(--main-dark-color);
+  color: var(--third-color);
+  border-color: var(--third-color);
+}

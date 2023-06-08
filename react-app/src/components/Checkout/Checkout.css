@@ -1,0 +1,28 @@
+label {
+  color: #30313d !important;
+  line-height: 1.15 !important;
+  font-weight: 400 !important;
+}
+
+.is-invalid {
+  border-width: 2px !important;
+}
+
+.center {
+  margin: auto;
+  width: fit-content;
+}
+
+.col-md-4 {
+  margin-right: -10%;
+}
+
+@media screen and (max-width: 768px) {
+  .col-md-4 {
+    margin-right: 0%;
+    order: -1;
+  }
+  .center {
+    width: auto;
+  }
+}

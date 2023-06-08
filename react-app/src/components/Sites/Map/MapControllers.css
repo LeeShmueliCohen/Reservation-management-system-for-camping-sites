@@ -1,0 +1,62 @@
+.control {
+  position: absolute;
+  z-index: 1;
+  top: 82%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(97, 140, 115);
+  border-radius: 10%;
+  border: solid 2px rgb(68, 72, 70);
+}
+
+table {
+  margin-right: 8%;
+}
+
+.arrow {
+  /* color: rgb(221, 234, 189); */
+  position: relative;
+  color: white;
+  background-color: grey;
+  font-size: 20px;
+  border-radius: 20% !important;
+  border: solid 1px gray;
+  /* border-left: solid rgb(179, 221, 79); */
+}
+
+.zoom {
+  color: white;
+  background-color: gray;
+  font-size: 21px;
+  border: solid 1px gray;
+  border-radius: 20% !important;
+}
+
+.reset {
+  color: gray;
+  background-color: white;
+  font-size: 20px;
+  border: solid 1px;
+  border-radius: 20% !important;
+}
+
+@media (max-width: 850px) {
+  .control {
+    top: 82%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  .control {
+    /* top: 75%;
+    left: 12%; */
+    display: none;
+  }
+}
+
+/* @media (max-width: 350px) {
+    .control {
+        display: none;
+    }
+} */

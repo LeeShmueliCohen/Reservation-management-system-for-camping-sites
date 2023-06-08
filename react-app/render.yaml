@@ -1,0 +1,8 @@
+staticSites:
+  - name: reservation-camping-sites
+    buildCommand: run build
+    publishDir: build
+    routes:
+      - src: /.*
+        dest: /index.html
+        action: rewrite

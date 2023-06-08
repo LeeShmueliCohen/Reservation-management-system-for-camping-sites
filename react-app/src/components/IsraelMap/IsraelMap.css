@@ -1,0 +1,22 @@
+.mapStyles-width{
+    flex: 65%;
+    height: 600px;
+}
+
+.title{
+    font-weight: bold !important;
+    margin: 25px 0px;
+}
+
+.detail-button{
+    border-radius: 10%;
+    background-color: var(--second-color);
+    color: var(--main-dark-color);
+    font-weight: bold !important;
+}
+
+@media (max-width: 800px) {
+    .mapStyles-width {
+      flex: 100%;
+    }
+}
